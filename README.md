@@ -17,10 +17,11 @@ I'm a Full Stack & AI Engineer based in Oakland, CA. I build high-performance we
 ### 🏆 Featured Projects
 
 #### 📅 ScheduleBud — AI-Assisted Calendar & Academic Management
-* Co-founding and building the core AI subsystem, converting unstructured course documents and schedules into deterministic calendar actions.
-* Engineered strict JSON schema validation and few-shot in-context learning pipelines to force 100% type-safe model outputs and eliminate UI state errors.
-* Implemented real-time Server-Sent Events (SSE) streaming with active client-side generation cancellation to minimize latency and manage user-driven aborts.
-* *In Progress:* Architecting a hybrid vector search and retrieval-augmented generation (RAG) pipeline to index multi-page course materials and extract contextual student tasks.
+* Co-founding and leading the AI subsystem, turning uploaded course documents into automated calendar events and personalized study tools.
+* Built a multi-pass flashcard generator using an Evaluator-Optimizer loop—combining local vector deduplication, strict schema validation, and an LLM judge to ensure cards are high-yield and non-repetitive.
+* Engineered an AI Diagnostic Practice Exam backed by GraphRAG; traverses concept dependency trees (eg `is_prerequisite_of`) to trace failed test questions back to the underlying foundational topics students actually missed.
+* Connected post-exam diagnostics straight into the app, letting students generate targeted flashcard decks or schedule study blocks on their calendar with a single click.
+* Built real-time SSE streaming with responsive client-side cancellation, clean stream draining, and background token usage tracking across Deno edge functions.
 
 #### 🃏 CardLedger.io — Local-First Collectible Tracking Platform
 * Built a precomputing financial tracker with cost basis, acquisition dates, variant-level pricing, and ROI charting—cutting database queries by 90% for returning users.
